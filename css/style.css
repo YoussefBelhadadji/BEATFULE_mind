@@ -3,10 +3,12 @@ Template Name: HTML Education Template
 Author: yaminncco
 
 Colors:
-	Body 		: #798696
+	Body 		: #374050
 	Headers 	: #374050
-	Primary 	: #FF6700
-	Grey 		: #EBEBEB
+	Primary 	: #6EC1E4
+	Secondary 	: #A8D5BA
+	Accent 		: #FCD97B
+	Background 	: #F8FBFF
 
 Fonts: Lato & Montserrat
 
@@ -37,7 +39,8 @@ body {
     font-family: 'Cairo', 'Montserrat', sans-serif; /* Changed for Arabic Support */
 	font-size: 15px;
     font-weight: 400;
-    color: #798696;
+    color: #374050;
+	background-color: #F8FBFF;
 	overflow-x:hidden;
 }
 
@@ -102,13 +105,13 @@ blockquote:before{
 	position:absolute;
 	left:0;
 	top:0;
-	color: #FF6700;
+	color: #6EC1E4;
 	width:40px;
 	height:40px;
 	line-height:40px;
 	text-align:center;
 	border-radius:50%;
-	border:1px solid #EBEBEB;
+	border:1px solid #A8D5BA;
 }
 
 
@@ -147,7 +150,7 @@ blockquote:before{
 	height: 150px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 5px solid #FF6700;
+	border: 5px solid #6EC1E4;
 }
 
 .member-social {
@@ -170,8 +173,8 @@ blockquote:before{
 	height: 35px;
 	line-height: 35px;
 	text-align: center;
-	background: #FF6700;
-	color: #fff;
+	background: #FCD97B;
+	color: #374050;
 	border-radius: 50%;
 	margin: 0 5px;
 	transition: all 0.3s ease;
@@ -190,13 +193,13 @@ blockquote:before{
 
 .team-member span {
 	display: block;
-	color: #FF6700;
+	color: #6EC1E4;
 	font-size: 16px;
 	margin-bottom: 15px;
 }
 
 .team-member p {
-	color: #798696;
+	color: #374050;
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 1.6;
@@ -223,10 +226,10 @@ blockquote:before{
 	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 30px;
-	color: #798696;
+	color: #374050;
 	font-weight: 500;
 	background-color: #fff;
-	border: 2px solid #EBEBEB;
+	border: 2px solid #A8D5BA;
 	transition: all 0.3s;
 }
 
@@ -234,16 +237,16 @@ blockquote:before{
 .course-filter li a.active,
 .course-sub-filter li a:hover,
 .course-sub-filter li a.active {
-	color: #fff;
-	background-color: #FF6700;
-	border-color: #FF6700;
+	color: #374050;
+	background-color: #FCD97B;
+	border-color: #FCD97B;
 }
 
 .course-sub-filter {
 	margin-top: -15px;
 	margin-bottom: 20px;
 	padding: 15px;
-	background: rgba(255, 103, 0, 0.05);
+	background: rgba(110, 193, 228, 0.05);
 	border-radius: 15px;
 }
 
@@ -269,7 +272,7 @@ blockquote:before{
 .section-hr {
 	margin-top:80px;
 	margin-bottom:80px;
-	border-color: #EBEBEB;
+	border-color: #A8D5BA;
 }
 
 .section-header {
@@ -298,8 +301,8 @@ blockquote:before{
 	right:0;
 	top:0;
 	bottom:0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#374050), to(#798696));
-	background-image: linear-gradient(to bottom, #374050 0%, #798696 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6EC1E4), to(#A8D5BA));
+	background-image: linear-gradient(to bottom, #6EC1E4 0%, #A8D5BA 100%);
 	opacity: 0.7;
 }
 
@@ -308,18 +311,18 @@ blockquote:before{
 	position:relative;
 	display:inline-block;
 	padding:10px 30px;
-	background-color: #FF6700;
+	background-color: #FCD97B;
 	border: 2px solid transparent;
 	border-radius: 40px;
-	color: #FFF;
+	color: #374050;
 	-webkit-transition:0.2s all;
 	transition:0.2s all;
 }
 
 .main-button:hover , .main-button:focus {
 	background-color:#fff;
-	border: 2px solid #FF6700;
-	color:#FF6700;
+	border: 2px solid #6EC1E4;
+	color:#6EC1E4;
 }
 
 .main-button.icon-button:hover , .main-button.icon-button:focus {
@@ -360,7 +363,7 @@ textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
-	border-color:#FF6700;
+	border-color:#6EC1E4;
 }
 
 /*------------------------------------*\
@@ -375,8 +378,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	display: inline-block;
 }
 
+.navbar-brand {
+	padding: 10px 0;
+}
+
 .navbar-brand .logo > img {
-	max-height:30px;
+	max-height: 40px;
+	width: auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -425,7 +433,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	content:"";
 	display:block;
 	height:2px;
-	background-color:#FF6700;
+	background-color:#6EC1E4;
 	width:100%;
 	-webkit-transform: translateY(5px);
 	    -ms-transform: translateY(5px);
@@ -586,7 +594,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	content: "/";
 	display: inline-block;
 	margin: 0px 5px;
-	color: rgba(235, 235, 235, 0.25);
+	color: rgba(110, 193, 228, 0.25);
 }
 
 /*------------------------------------*\
@@ -782,7 +790,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .course .course-details .course-price.course-premium {
-	color: #FF6700;
+	color: #6EC1E4;
 }
 
 #courses .center-btn {
@@ -797,7 +805,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 #bottom-footer {
 	margin-top: 20px;
 	padding-top: 20px;
-	border-top: 1px solid #EBEBEB;
+	border-top: 1px solid #A8D5BA;
 }
 
 /* -- Footer Logo -- */
@@ -829,14 +837,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .footer-nav li a:hover , .footer-nav li a:focus {
-	color:#FF6700;
+	color:#6EC1E4;
 }
 
 .footer-nav li a:after {
 	content:"";
 	display:block;
 	height:2px;
-	background-color:#FF6700;
+	background-color:#6EC1E4;
 	width:100%;
 	-webkit-transform: translateY(5px);
 	    -ms-transform: translateY(5px);
@@ -876,7 +884,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	text-align:center;
 	border-radius:50%;
 	color:#FFF;
-	background-color:#EBEBEB;
+	background-color:#A8D5BA;
 	-webkit-transition:0.2s opacity;
 	transition:0.2s opacity;
 }
@@ -929,9 +937,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .contact-details li i {
-	color: #FF6700;
+	color: #6EC1E4;
 	margin-right: 15px;
-	border: 1px solid #EBEBEB;
+	border: 1px solid #A8D5BA;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -971,7 +979,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	top:0;
 	bottom:0;
 	right:0;
-	background-color:#FF6700;
+	background-color:#6EC1E4;
 	opacity:0;
 	-webkit-transition:0.2s opacity;
 	transition:0.2s opacity;
@@ -984,11 +992,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .single-blog .blog-meta {
 	margin-top: 20px;
 	padding-top: 10px;
-	border-top: 1px solid #EBEBEB;
+	border-top: 1px solid #A8D5BA;
 }
 
 .single-blog .blog-meta .blog-meta-author > a {
-	color: #FF6700;
+	color: #6EC1E4;
 }
 
 .single-blog .blog-meta .blog-meta-comments {

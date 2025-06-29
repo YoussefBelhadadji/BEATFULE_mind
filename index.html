@@ -10,10 +10,11 @@
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
-
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -54,7 +55,7 @@
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-left">
 						<li><a href="index.html">الرئيسية</a></li>
-						<li><a href="#">من نحن</a></li>
+						<li><a href="about_us.html">من نحن</a></li>
 						<li><a href="courses.html">الدورات</a></li>
 						<li><a href="blog.html">المدونة</a></li>
 						<li><a href="contact.html">اتصل بنا</a></li>
@@ -79,7 +80,7 @@
 						<div class="col-md-8">
 							<h1 class="white-text">اكتشف أعماق العقل البشري معنا</h1>
 							<p class="lead white-text">انطلق في رحلة لفهم نفسك والآخرين بشكل أعمق. دوراتنا في علم النفس مصممة لتمنحك المعرفة والأدوات اللازمة لحياة أكثر توازناً وإدراكاً.</p>
-							<a class="main-button icon-button" href="courses.html">ابدأ رحلتك الآن!</a>
+							<a class="main-button icon-button" href="contact.html">ابدأ رحلتك الآن!</a>
 						</div>
 					</div>
 				</div>
@@ -148,178 +149,108 @@
 			<!-- container -->
 		</div>
 		<!-- /About -->
-
-		<!-- Courses -->
-		<div id="courses" class="section">
+		<!-- Stats Section -->
+		<div id="stats" class="section">
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta1-background.jpg)"></div>
+			<!-- /Backgound Image -->
 
 			<!-- container -->
 			<div class="container">
-
 				<!-- row -->
 				<div class="row">
 					<div class="section-header text-center">
-						<h2>أبرز دوراتنا في علم النفس</h2>
-						<p class="lead">سواء كنت طالباً، متخصصاً، أو شغوفاً بالمعرفة، ستجد لدينا ما يثري عقلك.</p>
+						<h2 class="white-text">أرقامنا تتحدث عن نجاحنا</h2>
+						<p class="lead white-text">نحن لا نعدك بالتغيير فقط، بل نريك أثره بالأرقام. انضم إلى مجتمعنا الذي ينمو كل يوم.</p>
 					</div>
 				</div>
 				<!-- /row -->
 
-				<!-- courses -->
-				<div id="courses-wrapper">
-
-					<!-- row -->
-					<div class="row">
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course01.jpg" alt="دورة العلاج السلوكي المعرفي">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">أساسيات العلاج السلوكي المعرفي (CBT)</a>
-								<div class="course-details">
-									<span class="course-category">العلاج النفسي</span>
-									<span class="course-price course-premium">مدفوعة</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course02.jpg" alt="دورة علم نفس الطفل">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">مقدمة في علم نفس الطفل</a>
-								<div class="course-details">
-									<span class="course-category">علم نفس النمو</span>
-									<span class="course-price course-free">مجانية</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course03.jpg" alt="دورة الذكاء العاطفي">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">فن الذكاء العاطفي وتطبيقاته العملية</a>
-								<div class="course-details">
-									<span class="course-category">تطوير الذات</span>
-									<span class="course-price course-premium">مدفوعة</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course04.jpg" alt="دورة فهم اضطراب فرط الحركة">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">فهم وإدارة اضطراب فرط الحركة (ADHD)</a>
-								<div class="course-details">
-									<span class="course-category">الاضطرابات النفسية</span>
-									<span class="course-price course-free">مجانية</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-					</div>
-					<!-- /row -->
-
-					<!-- row -->
-					<div class="row">
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course05.jpg" alt="دورة سيكولوجية العلاقات">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">سيكولوجية العلاقات الأسرية الناجحة</a>
-								<div class="course-details">
-									<span class="course-category">علم النفس الاجتماعي</span>
-									<span class="course-price course-premium">مدفوعة</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course06.jpg" alt="دورة التغلب على القلق">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">استراتيجيات التغلب على القلق والتوتر</a>
-								<div class="course-details">
-									<span class="course-category">الصحة النفسية</span>
-									<span class="course-price course-free">مجانية</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course07.jpg" alt="دورة التحليل النفسي">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">مبادئ التحليل النفسي: من فرويد إلى يونغ</a>
-								<div class="course-details">
-									<span class="course-category">نظريات علم النفس</span>
-									<span class="course-price course-premium">مدفوعة</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-
-						<!-- single course -->
-						<div class="col-md-3 col-sm-6 col-xs-6">
-							<div class="course">
-								<a href="course-details.html" class="course-img">
-									<img src="./img/course08.jpg" alt="دورة التفكير الإيجابي">
-									<i class="course-link-icon fa fa-link"></i>
-								</a>
-								<a class="course-title" href="course-details.html">قوة التفكير الإيجابي وبناء العقلية المرنة</a>
-								<div class="course-details">
-									<span class="course-category">علم النفس الإيجابي</span>
-									<span class="course-price course-free">مجانية</span>
-								</div>
-							</div>
-						</div>
-						<!-- /single course -->
-
-					</div>
-					<!-- /row -->
-
-				</div>
-				<!-- /courses -->
-
+				<!-- row -->
 				<div class="row">
-					<div class="center-btn">
-						<a class="main-button icon-button" href="courses.html">استكشف كل الدورات</a>
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-users"></i>
+							<h3 class="stat-count" data-target="10000">0</h3>
+							<span class="stat-text">طالب وطالبة</span>
+						</div>
 					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-smile-o"></i>
+							<h3 class="stat-count" data-target="98">0</h3>
+							<span class="stat-text">نسبة الرضا (%)</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-graduation-cap"></i>
+							<h3 class="stat-count" data-target="7500">0</h3>
+							<span class="stat-text">قصة نجاح</span>
+						</div>
+					</div>
+					<!-- /single stat -->
+
+					<!-- single stat -->
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="stat-box">
+							<i class="fa fa-globe"></i>
+							<h3 class="stat-count" data-target="15">0</h3>
+							<span class="stat-text">دولة حول العالم</span>
+						</div>
+					</div>
+					<!-- /single stat -->
 				</div>
-
+				<!-- /row -->
 			</div>
-			<!-- container -->
-
+			<!-- /container -->
 		</div>
+		<!-- /Stats Section -->
+		<!-- Courses -->
+		<div id="courses" class="section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row">
+            <div class="section-header text-center">
+                <h2>أبرز دوراتنا وتخصصاتنا</h2>
+                <p class="lead">انطلق في رحلة معرفية مع دوراتنا المصممة بعناية لتلبية شغفك.</p>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <!-- Courses Slider -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="courses-slider-wrapper">
+                    <!-- Swiper -->
+                    <div class="swiper-container featured-courses-slider">
+                        <div id="featured-courses-list" class="swiper-wrapper">
+                            <!-- Course cards will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next custom-swiper-arrow"></div>
+                    <div class="swiper-button-prev custom-swiper-arrow"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /Courses Slider -->
+
+        <!-- CTA Button -->
+        <div class="row">
+            <div class="center-btn">
+                <a class="main-button icon-button" href="courses.html">استكشف كل الدورات</a>
+            </div>
+        </div>
+    </div>
+</div>
 		<!-- /Courses -->
 
 		<!-- Call To Action -->
@@ -428,7 +359,121 @@
 
 		</div>
 		<!-- /Why us -->
+		  <hr class="section-hr">
+<!-- Testimonials Section (Modern Split Design) -->
+<div id="testimonials" class="section">
+    <div class="container">
+        <div class="row testimonial-split-layout">
+            
+            <!-- Left Side: Title and Navigation -->
+            <div class="col-md-4 col-sm-12 testimonial-title-area">
+                <div class="section-header">
+                    <span class="sub-title">آراء العملاء</span>
+                    <h2>ماذا يقولون عنا؟</h2>
+                    <p>آراء عملائنا وشركائنا هي شهادة نعتز بها وتدفعنا لتقديم الأفضل دائماً.</p>
+                </div>
+                <!-- Custom Navigation Arrows -->
+                <div class="testimonial-nav">
+                    <button class="custom-prev"><i class="fa fa-angle-right"></i></button>
+                    <button class="custom-next"><i class="fa fa-angle-left"></i></button>
+                </div>
+            </div>
 
+            <!-- Right Side: Testimonials Slider -->
+            <div class="col-md-8 col-sm-12 testimonial-slider-area">
+                <div id="testimonials-slider-modern" class="owl-carousel owl-theme">
+
+                    <!-- Single Testimonial -->
+                    <div class="testimonial-modern">
+                        <div class="testimonial-content">
+                            <p>"منصة العقل الجميل أحدثت نقلة نوعية في طريقة متابعتي للحالات. الأدوات الرقمية والتقارير سهلت عليّ الكثير من العمل ووفرت لي الوقت للتركيز على الجانب العلاجي."</p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <img src="./pic/man.png" alt="أخصائي نفسي">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">د. أحمد خالد</h4>
+                                <span class="testimonial-role">أخصائي نفسي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Single Testimonial -->
+
+                    <!-- Single Testimonial -->
+                    <div class="testimonial-modern">
+                        <div class="testimonial-content">
+                            <p>"لأول مرة أشعر أنني جزء من رحلة علاج ابني. الورشات الموجهة للأولياء كانت مفيدة جداً، والتواصل مع الأخصائي أصبح أسهل بكثير بفضل المنصة."</p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <img src="./pic/woman.png" alt="ولي أمر">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">سارة العبدالله</h4>
+                                <span class="testimonial-role">ولي أمر</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Single Testimonial -->
+                    
+                    <!-- Single Testimonial -->
+                    <div class="testimonial-modern">
+                         <div class="testimonial-content">
+                            <p>"الدورات التدريبية المقدمة على المنصة ذات جودة عالية ومحتوى علمي دقيق. استفدت كثيراً من خبرات المدربين وتطبيقاتهم العملية."</p>
+                        </div>
+                        <div class="testimonial-meta">
+                            <img src="./pic/bussiness-man.png" alt="متدرب">
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">علي حسن</h4>
+                                <span class="testimonial-role">طالب علم نفس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Single Testimonial -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+	        <!-- Separator and Form -->
+        <hr class="section-hr">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="section-header text-center">
+                    <h3>شاركنا تجربتك</h3>
+                    <p>رأيك يهمنا ويساعدنا على التطور وخدمة الآخرين بشكل أفضل.</p>
+                </div>
+                
+                <!-- Review Submission Form -->
+                <form id="review-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="input" type="text" name="name" placeholder="الاسم الكامل" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                <input class="input" type="text" name="role" placeholder="صفتك (مثال: ولي أمر، أخصائي)" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="input" name="review" placeholder="اكتب رأيك هنا..." rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="main-button icon-button">إرسال الرأي</button>
+                    </div>
+                </form>
+                
+                <!-- Success Message (Initially Hidden) -->
+                <div id="review-form-success" style="display:none; text-align:center; margin-top:20px; padding: 20px; background: #f0f9f4; border: 1px solid #A8D5BA; border-radius: 8px;">
+                    <h4 style="color: #374050; margin-top:0;">شكراً جزيلاً لك!</h4>
+                    <p style="color: #374050; margin-bottom:0;">تم استلام رأيك بنجاح. نحن نقدر مساهمتك القيمة.</p>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- /Testimonials Section -->
+		<!-- Team -->
 		<!-- Team -->
 		<div id="team" class="section">
 			<!-- container -->
@@ -439,7 +484,7 @@
 						<h2>فريقنا المتميز</h2>
 						<p class="lead">نخبة من المتخصصين يعملون معاً لتقديم أفضل تجربة تعليمية</p>
 					</div>
-
+                    <div class="container_team">
 					<!-- team member -->
 					<div class="col-md-4">
 						<div class="team-member">
@@ -457,25 +502,6 @@
 						</div>
 					</div>
 					<!-- /team member -->
-
-					<!-- team member -->
-					<div class="col-md-4">
-						<div class="team-member">
-							<div class="member-img">
-								<img src="./img/doctor.png" alt="د. محمد العلي">
-								<div class="member-social">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-linkedin"></i></a>
-								</div>
-							</div>
-							<h4>د. محمد العلي</h4>
-							<span>كبير المدربين</span>
-							<p>متخصص في العلاج المعرفي السلوكي مع خبرة واسعة في تطوير البرامج التدريبية</p>
-						</div>
-					</div>
-					<!-- /team member -->
-
 					<!-- team member -->
 					<div class="col-md-4">
 						<div class="team-member">
@@ -487,13 +513,13 @@
 									<a href="#"><i class="fa fa-linkedin"></i></a>
 								</div>
 							</div>
-							<h4>أ. نور الهاشمي</h4>
+							<h4>لعريقي أمينة</h4>
 							<span>مستشارة نفسية</span>
 							<p>متخصصة في الإرشاد النفسي والأسري مع خبرة 10 سنوات في العلاج النفسي</p>
 						</div>
 					</div>
 					<!-- /team member -->
-
+                </div>
 				</div>
 				<!-- /row -->
 			</div>
@@ -529,81 +555,112 @@
 		</div>
 		<!-- /Contact CTA -->
 
-		<!-- Footer -->
-		<footer id="footer" class="section">
+<!-- Footer (The "Golden Touch" Redesign) -->
 
-			<!-- container -->
-			<div class="container">
 
-				<!-- row -->
-				<div class="row">
 
-					<!-- footer logo -->
-					<div class="col-md-6">
-						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo-new.svg" alt="شعار العقل الجميل">
-							</a>
-						</div>
-					</div>
-					<!-- footer logo -->
+<footer id="footer" class="section">
+    <!-- Golden CTA Bar -->
+    <div class="footer-cta-bar">
+        <div class="container">
+            <p>هل أنت مستعد لبدء رحلة النمو؟ <a href="contact.html">تواصل مع خبرائنا اليوم!</a></p>
+        </div>
+    </div>
 
-					<!-- footer nav -->
-					<div class="col-md-6">
-						<ul class="footer-nav">
-							<li><a href="index.html">الرئيسية</a></li>
-							<li><a href="#">من نحن</a></li>
-							<li><a href="courses.html">الدورات</a></li>
-							<li><a href="blog.html">المدونة</a></li>
-							<li><a href="contact.html">اتصل بنا</a></li>
-						</ul>
-					</div>
-					<!-- /footer nav -->
+    <!-- Main Footer Content -->
+    <div class="main-footer-content">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
 
-				</div>
-				<!-- /row -->
+                <!-- Column 1: Logo & About -->
+                <div class="col-md-4 col-sm-12 footer-about">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a class="logo" href="index.html">
+                                <!-- تعليق: قمت بتكبير الشعار قليلاً -->
+                                <img src="./img/logo-new.svg" alt="شعار العقل الجميل" style="max-height: 55px;">
+                            </a>
+                        </div>
+                        <p>منصة رقمية متكاملة تهدف إلى تقديم الدعم النفسي والتربوي للأطفال ذوي الاضطرابات النمائية، وتمكين الأولياء والأخصائيين بأحدث الأدوات والمعرفة.</p>
+                        <ul class="footer-social-top">
+                            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
 
-				<!-- row -->
-				<div id="bottom-footer" class="row">
-					<!-- social -->
-					<div class="col-md-4 col-md-push-8">
-						<ul class="footer-social">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
-							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
-					</div>
-					<!-- /social -->
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-2 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">روابط سريعة</h4>
+                        <ul class="widget-links">
+                            <li><a href="about-us.html">من نحن</a></li>
+                            <li><a href="courses.html">الدورات</a></li>
+                            <li><a href="blog.html">المدونة</a></li>
+                            <li><a href="contact.html">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Column 3: Important Links -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">معلومات هامة</h4>
+                        <ul class="widget-links">
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-					<!-- copyright -->
-					<div class="col-md-8 col-md-pull-4">
-						<div class="footer-copyright">
-							<span>©  النشر 2025. جميع الحقوق محفوظة.<i class="fa fa-heart-o" aria-hidden="true"></i></span>
-						</div>
-					</div>
-					<!-- /copyright -->
+                <!-- Column 4: Newsletter -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">النشرة البريدية</h4>
+                        <p>انضم إلينا ليصلك كل جديد من مقالات ودورات ونصائح الخبراء.</p>
+                        <form class="newsletter-form">
+                            <input class="input" type="email" placeholder="أدخل بريدك الإلكتروني">
+                            <button class="main-button icon-button" style="width: 100%; margin-top: 10px;">اشتراك</button>
+                        </form>
+                    </div>
+                </div>
 
-				</div>
-				<!-- row -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
 
-			</div>
-			<!-- /container -->
+    <!-- Bottom Footer Bar -->
+    <div id="bottom-footer" class="text-center">
+        <div class="container">
+            <div class="footer-copyright">
+                <span>© النشر 2025. جميع الحقوق محفوظة لمنصة <strong>العقل الجميل</strong>.</span>
+            </div>
+        </div>
+    </div>
+</footer>
 
-		</footer>
-		<!-- /Footer -->
 
+<!-- /Footer -->
 		<!-- preloader -->
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
 
-
-		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+   <!-- jQuery Plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- <<< أضف هذا السطر هنا >>> -->
+<script type="text/javascript" src="js/course-data.js"></script> 
+    <!-- أضف هذا السطر هنا -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 	</body>
 </html>
